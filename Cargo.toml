@@ -1,6 +1,18 @@
 [package]
 name = "bevy-mp-experiments"
+description = "A collection of experiments for bevy multiplayer"
 version = "0.1.0"
 edition = "2021"
+license = "MIT"
+repository = "https://www.github.com/b-n/bevy-mp-experiments"
+keywords = ["bevy", "multiplayer", "networking", "game", "experiment"]
+categories = ["game-development", "networking"]
+
 
 [dependencies]
+bevy = { version ="0.15.3" }
+
+[lints.clippy]
+all = "warn"
+pedantic = "warn"
+cargo = "warn"
