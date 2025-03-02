@@ -8,9 +8,22 @@ repository = "https://www.github.com/b-n/bevy-mp-experiments"
 keywords = ["bevy", "multiplayer", "networking", "game", "experiment"]
 categories = ["game-development", "networking"]
 
-
-[dependencies]
-bevy = { version ="0.15.3" }
+[dependencies.bevy]
+version ="0.15.3"
+default-features = false
+features = [
+  "bevy_color",
+  "bevy_core_pipeline",
+  "bevy_gilrs",
+  "bevy_gizmos",
+  "bevy_render",
+  "bevy_ui",
+  "bevy_window",
+  "bevy_winit",
+  "multi_threaded",
+  "sysinfo_plugin",
+  "x11",
+]
 
 [lints.clippy]
 all = "warn"
