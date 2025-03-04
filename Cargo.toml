@@ -29,3 +29,4 @@ features = [
 all = "warn"
 pedantic = "warn"
 cargo = "warn"
+needless_pass_by_value = "allow"

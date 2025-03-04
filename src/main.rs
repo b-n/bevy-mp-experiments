@@ -18,7 +18,6 @@ fn main() {
         .run();
 }
 
-#[allow(clippy::needless_pass_by_value)]
 fn draw_cursor(
     camera_query: Single<(&Camera, &GlobalTransform)>,
     windows: Query<&Window>,
